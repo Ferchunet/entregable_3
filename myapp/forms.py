@@ -1,17 +1,18 @@
+# forms.py
 from django import forms
 from .models import Categoria, Producto, Cliente
 
 class CategoriaForm(forms.ModelForm):
     class Meta:
         model = Categoria
-        fields = ['nombre']
+        fields = '__all__'
 
 class ProductoForm(forms.ModelForm):
     class Meta:
         model = Producto
-        fields = ['nombre', 'categoria', 'precio']
+        fields = '__all__'
 
 class ClienteForm(forms.ModelForm):
     class Meta:
         model = Cliente
-        fields = ['nombre', 'direccion', 'email']
+        fields = ['nombre']  # Add other fields as needed, and remove 'direccion' if it is not part of the model

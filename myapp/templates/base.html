@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Mi Proyecto{% endblock %}</title>
+    <title>{% block title %}Mi Proyecto Django{% endblock %}</title>
+   <link rel="stylesheet" href="../static/myapp/css/style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <nav>
+            <ul class="base">
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'agregar_categoria' %}">Agregar Categoría</a></li>
+                <li><a href="{% url 'agregar_producto' %}">Agregar Producto</a></li>
+                <li><a href="{% url 'agregar_cliente' %}">Agregar Cliente</a></li>
+                <li><a href="{% url 'buscar' %}">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         {% block content %}
         {% endblock %}
-    </div>
+    </main>
 </body>
 </html>

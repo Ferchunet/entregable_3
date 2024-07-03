@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import CategoriaForm, ProductoForm, ClienteForm
 from .models import Categoria, Producto, Cliente
 from .models import Producto  # Asegúrate de importar el modelo Producto adecuadamente
-
+from django.shortcuts import render
 def agregar_categoria(request):
     if request.method == 'POST':
         form = CategoriaForm(request.POST)
@@ -39,3 +39,6 @@ def buscar(request):
     if query:
         resultados = Producto.objects.filter(nombre__icontains=query)
     return render(request, 'buscar.html', {'resultados': resultados})
+
+def inicio(request):
+    return render(request, 'inicio.html')

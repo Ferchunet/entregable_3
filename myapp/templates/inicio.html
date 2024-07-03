@@ -1,0 +1,16 @@
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="../static/myapp/css/style.css">
+</head>
+<div class="container">
+    <h2>libreria</h2>
+    <div class="links">
+        <a href="{% url 'agregar_categoria' %}" class="button">Agregar Categoría</a>
+        <a href="{% url 'agregar_producto' %}" class="button">Agregar Producto</a>
+        <a href="{% url 'agregar_cliente' %}" class="button">Agregar cliente</a>
+        <a href="{% url 'buscar' %}" class="button">buscar</a>
+     
+    </div>
+</div>
+{% endblock %}

@@ -1,32 +1,107 @@
-/* Estilos personalizados */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+   
+    background-color: #101656;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-form {
-    margin-bottom: 20px;
+.links {
+    
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-button {
-    background-color: #4CAF50;
+body{
+ background-color: #653fbc;
+    
+}
+.button {
+   
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: #c7c0d7;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
     border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #45a049;
+.base  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: rgb(27, 16, 16);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background-color: #653fbc;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+}
+
+.button:hover {
+    background-color: #110f62;
+
+}
+
+
+.base li a:hover {
+    background-color: #110f62;
+
+}
+.base a {
+    margin-left: 120px;
+    text-decoration: none;
+    color: #c21111;
+    
+}
+
+
+/*agregar cliente*/
+.agregar_cliente {
+    background-color: #0c1147;
 }
